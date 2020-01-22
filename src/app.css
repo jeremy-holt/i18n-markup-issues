@@ -1,0 +1,13 @@
+.text-primary 
+{
+  color: blue;
+}
+
+section {
+  border: 1px solid silver;
+  padding: 2rem;
+}
+
+section p {
+  color: blue;
+}

@@ -1,0 +1,37 @@
+<template>
+  <require from="./test-label-custom-element"></require>
+  <require from="./app.css"></require>
+
+  <section>
+    <p>
+      t is bound to [label] - obviously does not pick up on the markup
+    </p>
+  
+    <test-label t="[label]welcome-label"></test-label>
+  </section>
+
+
+  <section>
+    <p>
+      t is bound to [html]. Interestingly, it inserts the translation into the label property without any prompting
+    </p>
+    <test-label t="[html]welcome-label"></test-label>
+  </section>
+
+  <section>
+    <p>
+      t is bound to [caption] property. Again does not pickup the markup
+    </p>
+    <test-label t="[caption]welcome-caption"></test-label>
+  </section>
+
+  <section>
+    <p>
+      I want to bind t to [html] AND to [caption]
+    </p>
+    <test-label t="[html]welcome-caption"></test-label>
+    <test-label t="[caption]welcome-caption"></test-label>
+  </section>
+
+
+</template>
