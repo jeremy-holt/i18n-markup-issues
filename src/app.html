@@ -18,6 +18,7 @@
     <test-label t="[html]welcome-label"></test-label>
   </section>
 
+
   <section>
     <p>
       t is bound to [caption] property. Again does not pickup the markup
@@ -25,12 +26,16 @@
     <test-label t="[caption]welcome-caption"></test-label>
   </section>
 
+
   <section>
     <p>
       I want to bind t to [html] AND to [caption]
     </p>
     <test-label t="[html]welcome-caption"></test-label>
     <test-label t="[caption]welcome-caption"></test-label>
+    
+    <test-label t="[caption]welcome-caption;[html]welcome-caption"></test-label>
+    <test-label t="[caption][html]welcome-caption"></test-label>
   </section>
 
 
